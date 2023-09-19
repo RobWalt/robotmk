@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 pub mod attempt;
+mod child_process_supervisor;
 mod cli;
 mod config;
 mod environment;
@@ -8,6 +9,7 @@ pub mod parse_xml;
 mod results;
 mod setup;
 mod termination;
+mod timeout;
 
 use anyhow::{Context, Result};
 use clap::Parser;
